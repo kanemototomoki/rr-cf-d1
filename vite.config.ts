@@ -13,6 +13,9 @@ export default defineConfig(({ isSsrBuild }) => ({
         }
       : undefined,
   },
+  server: {
+    port: 7000,
+  },
   css: {
     postcss: {
       plugins: [tailwindcss, autoprefixer],
